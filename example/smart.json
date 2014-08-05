@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "iron-router": {},
+    "fake": {},
+    "moment": {},
+    "unimark": {},
+    "timestamp": {},
+    "impact": {
+      "path": ".."
+    }
+  }
+}

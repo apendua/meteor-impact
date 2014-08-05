@@ -1,0 +1,95 @@
+
+
+
+.dynamo_column {
+  display: inline-block;
+  vertical-align: top;
+  width: 330px;
+  background: #ffffff;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+  border-radius: 5px;
+  margin-right: 20px;
+  font-size: 12px;
+  white-space: normal;
+  height: 100%;
+  position: relative;
+  /*top: 0px;*/
+  /*bottom: 60px;*/
+  /*left: 20px;*/
+  /*top: ;*/
+  /*overflow-y: scroll; */
+}
+
+.dynamo_columnTitle {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  height: 80px;
+  padding: 20px 10px;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.dynamo_columnBody {
+  position: absolute;
+  overflow-y: scroll; 
+  top: 80px;
+  bottom: 50px;
+  left: 0px;
+  right: 0px;
+  /*padding: 20px 0px;*/
+}
+
+.dynamo_columnFooter {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 50px;
+  padding: 0px 10px;
+
+  text-align: right;
+  /*box-shadow: 0px -20px 20px -22px #0080ff;*/
+}
+
+.dynamo_columnResponse {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #f0f0f0;
+  border-radius: 3px;
+  resize: none;
+}
+
+
+.dynamo_cell {
+  padding: 20px 0px;
+  /*margin-top: 10px;*/
+  /*border-top: 1px dotted #e0e0e0;*/
+}
+
+.dynamo_cellHeader {
+  /*background: #f8f8f8;*/
+  border-top: 1px solid #e0e0e0;
+  padding: 10px 20px 0px;
+  color: #c0c0c0;
+  line-height: 20px;
+}
+
+.dynamo_cellUsername {
+  display: inline-block;
+}
+
+.dynamo_cellTime {
+  float: right;
+}
+
+.dynamo_cellContent {
+  padding: 20px;
+  font-size: 13px;
+}
+
+
+

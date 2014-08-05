@@ -1,0 +1,55 @@
+<template name="dyna_board">
+
+  <div class="dynamo_box">
+    <div class="dynamo_column_template"></div>
+    {{#each threads}}
+      <div class="dynamo_item">
+        {{> dyna_board_thread}}
+      </div>
+    {{/each}}
+  </div>
+  
+  <div class="dynamo_sidebar">
+    <div class="dynamo_sidebarBreadcrumbs">
+      <a href="{{pathFor 'dyna_home'}}">FORUM</a>
+      <i class="fa fa-angle-right"></i>
+      {{#each ancestors}}
+        <a href="{{pathFor 'dyna_board'}}">{{title}}</a> <i class="fa fa-angle-right"></i>
+      {{/each}}
+    </div>
+    {{#with board}}
+      <div class="dynamo_sidebarTitle">
+        {{title}}
+      </div>
+    {{/with}}
+
+
+  </div>
+
+
+</template>
+
+
+<template name="dyna_trash">
+    <!--
+    <div class="dynamo_sidebarCards">
+      <div class="dynamo_sidebarCardsHeader">
+        Boards
+      </div>
+      <div class="dynamo_sidebarCardsBody">
+        {{#each subboards}}
+          <a class="dynamo_sidebarCard" href="{{pathFor 'dyna_board'}}">
+            {{title}}
+          </a>
+        {{/each}}
+      </div>
+      <div class="dynamo_sidebarCardsFooter">
+        <button class="dynamo_sidebarCardsButton">+ new board</button>
+      </div>
+    </div>
+    -->
+
+</template>
+
+
+

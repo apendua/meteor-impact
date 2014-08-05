@@ -1,0 +1,14 @@
+//////////////////////////////////
+/**/Meteor.startup(function(){/**/
+//////////////////////////////////
+
+useTimestampsFor(Modules.Dyna.Boards);
+useTimestampsFor(Modules.Dyna.Threads);
+useTimestampsFor(Modules.Dyna.Posts);
+
+//////////////////////////////////
+/*************************/});/**/
+//////////////////////////////////
+
+
+

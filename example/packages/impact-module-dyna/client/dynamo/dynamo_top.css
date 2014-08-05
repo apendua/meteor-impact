@@ -1,0 +1,56 @@
+
+.dynamo_sidebarBreadcrumbs {
+  font-size: 12px;
+}
+
+.dynamo_sidebarTitle {
+  font-weight: bold;
+  font-size: 18px;
+  color: #303030;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.dynamo_sidebarCards {
+
+  margin: 40px -10px;
+  padding: 0px;
+  
+}
+
+.dynamo_sidebarCardsHeader {
+  text-align: center;
+  color: #a0a0a0;
+}
+
+.dynamo_sidebarCardsBody {
+  background: #ffffff;
+}
+
+.dynamo_sidebarCardsFooter {
+  text-align: right;
+}
+
+.dynamo_sidebarCard {
+  display: block;
+  padding: 0px 20px;
+  /*text-align: center;*/
+  /*background: #f8f8f8;*/
+  /*box-shadow: 1px 1px 3px rgba(0,0,0,0.25);*/
+  /*border-radius: 5px;*/
+  /*margin-bottom: 10px;*/
+  height: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  /*font-weight: bold;*/
+  cursor: default;
+  color: #303030;
+}
+
+.dynamo_sidebarCard:hover {
+  background: #f8f8f8;
+  color: #428BCA;
+  text-decoration: none;
+}
+
+

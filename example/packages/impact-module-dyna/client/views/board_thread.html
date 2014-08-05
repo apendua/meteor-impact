@@ -1,0 +1,21 @@
+<template name="dyna_board_thread">
+  <div class="dynamo_column">
+    <div class="dynamo_columnTitle">{{title}}</div>
+ <div class="dynamo_columnBody">
+      {{#each posts}}
+        {{> dyna_board_post}}
+      {{/each}}
+    </div> 
+  </div>
+</template>
+
+<template name="dbt_trash">
+
+      
+    <div class="dynamo_columnFooter">
+      <textarea type="text" class="dynamo_columnResponse dyna_board_thread_response"></textarea>
+    </div>
+
+  </template>
+
+
