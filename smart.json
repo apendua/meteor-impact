@@ -1,0 +1,11 @@
+{
+  "name": "impact",
+  "packages": {
+    "modules": {
+      "path": "../meteor-modules"
+    },
+    "crater-modals": {
+      "git": "https://github.com/apendua/meteor-crater-modals.git"
+    }
+  }
+}

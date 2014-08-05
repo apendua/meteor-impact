@@ -29,14 +29,14 @@
           <a href="javascript: Meteor.logout();">Sign out</a>
         </div>
         <div class="adminLayout-boxContent">
-          {{yield}}
+          {{> yield}}
         </div>
       </div>
     </div>
 
   {{else}}
     NOT AN ADMIN?
-    {{loginButtons}}
+    {{> loginButtons}}
   {{/admin}}
   
 </template>

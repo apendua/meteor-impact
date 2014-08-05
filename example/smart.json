@@ -3,7 +3,9 @@
     "iron-router": {},
     "fake": {},
     "moment": {},
-    "unimark": {},
+    "unimark": {
+      "git": "https://github.com/apendua/meteor-unimark.git"
+    },
     "timestamp": {},
     "impact": {
       "path": ".."

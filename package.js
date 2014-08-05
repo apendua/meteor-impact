@@ -11,14 +11,15 @@ Package.on_use(function (api, where) {
 
   api.use([
     'accounts-base',
-    'crater',
+    'accounts-password',
+    'crater-modals',
     'deps',
     'fake',
     'handlebars',
     'iron-router',
     'less',
     'moment',
-    'spark',
+    'blaze',
     'templating',
     'timestamp',
     'underscore',

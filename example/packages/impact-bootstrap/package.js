@@ -8,13 +8,13 @@ Package.on_use(function (api, where) {
 
   api.use([
     'accounts-base',
-    'crater',
+    'crater-modals',
     'deps',
     'fake',
     'handlebars',
     'iron-router',
     'moment',
-    'spark',
+    'blaze',
     'templating',
     'timestamp',
     'underscore',
@@ -36,7 +36,8 @@ Package.on_use(function (api, where) {
     'theme/_/html.less',
     'theme/_/zaddons.less',
 
-    'theme/unimark/uni-code.css',
+    // no such file?
+    //'theme/unimark/uni-code.css',
 
     'layouts/classic/classic.html',
     'layouts/classic/classic.js',
