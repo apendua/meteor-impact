@@ -23,6 +23,7 @@ Package.on_use(function (api, where) {
     'underscore',
     'unimark',
     'modules',
+    'impact',
   ], both);
 
 

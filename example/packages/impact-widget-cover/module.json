@@ -1,0 +1,7 @@
+{
+  "name": "cover",
+  "plugins": [ "impact" ],
+  "impact": {
+    "type": "widget"
+  }
+}

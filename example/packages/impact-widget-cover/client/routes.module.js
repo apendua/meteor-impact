@@ -8,9 +8,9 @@ Router.map(function () {
     icon: 'desktop',
   });
 
-  this.route('cover_dashboard', {
+  this.route('dashboard', {
     path: '/content/cover',
-    template: 'cover_dashboard',
+    template: 'dashboard',
     layoutTemplate: 'adminLayout',
     data: { impact: {
       bulbs: Panels.Content.bulbs,

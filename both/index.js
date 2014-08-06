@@ -49,9 +49,9 @@ function capFirst(string) {
 }
 
 Module.registerPlugin("impact", [ "$module", "$config" ], function ($module, $config) {
-  var settings = $config.impact || {};
+  var settings = $config.impact;
 
-  if (settings) {
+  if (!settings) {
     settings = { type: "module" };
     console.warn("Module `" + $config.name + "` is using impact plugin but it has not defined any impact settings.");
   }
@@ -71,13 +71,21 @@ Module.registerPlugin("impact", [ "$module", "$config" ], function ($module, $co
         }
         Panels[type].moduleBulbs.push(options);
       }
-    },
+    }, // module
     widget: function (instance, settings) {
       instance.Impact.addToPanels = function (options) {
         Panels.Content.widgetBulbs.push(options);
-      }
-    },
-  }
+      };
+      instance.Impact.wdgetSettings = function (options) {
+        console.log(options);
+        //if (!Widgets.Settings.findOne(settings.__name__)) { // or $config.name ???
+        //  Widgets.Settings.insert(_.extend(options, {
+        //    _id: settings.__name__
+        //  }));
+        //}
+      };
+    }, // widget
+  }; // factories
 
   if (!factories[settings.type]) {
     console.warn("Imapct type `" + settins.type + "` is not supported.");

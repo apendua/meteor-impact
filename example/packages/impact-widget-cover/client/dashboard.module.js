@@ -1,4 +1,4 @@
-Template.cover_dashboard.events({
+Template.dashboard.events({
 
 });
 
@@ -22,7 +22,7 @@ var craterFormOptions = {
 
 
 
-Template.cover_dashboard.rendered = function() {
+Template.dashboard.rendered = function() {
 
   Crater.go(this);
 
@@ -64,7 +64,7 @@ Template.cover_dashboard.rendered = function() {
   });
 };
 
-Template.cover_dashboard.form = function() {
+Template.dashboard.form = function() {
   return Crater.forms.inject(formFields, Widgets.Settings.findOne('cover'), craterFormOptions);
 };
 
