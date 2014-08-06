@@ -49,7 +49,9 @@
         "commit": "4a2d53e35ba036b0c189c7ceca34be494d4c6c97"
       },
       "modules": {
-        "path": "../../meteor-modules"
+        "git": "https://github.com/anticoders/meteor-modules.git",
+        "branch": "devel",
+        "commit": "a3118137698829ef77d30602c8a0bd16c69d82c6"
       },
       "crater-modals": {
         "git": "https://github.com/apendua/meteor-crater-modals.git",

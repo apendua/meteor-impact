@@ -2,7 +2,8 @@
   "name": "impact",
   "packages": {
     "modules": {
-      "path": "../meteor-modules"
+      "git": "https://github.com/anticoders/meteor-modules.git",
+      "branch": "devel"
     },
     "crater-modals": {
       "git": "https://github.com/apendua/meteor-crater-modals.git"
