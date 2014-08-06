@@ -26,10 +26,4 @@ MyBlog = Module('blog').load('blog', {
   },
 });
 
-/*
-
-Modules.Dyna.load({
-
-});
-*/
-
+MyDyna = Module('dyna').load('dyna');

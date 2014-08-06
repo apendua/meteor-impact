@@ -26,7 +26,8 @@ Package.on_use(function (api, where) {
   api.use('modules', both);
 
   api.add_files([
-    'both/module.json',
+    'module.json', // module configuration
+
     'both/model.module.js',
   ], both, { module: 'blog' });
 

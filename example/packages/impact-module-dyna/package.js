@@ -22,6 +22,7 @@ Package.on_use(function (api, where) {
     'timestamp',
     'underscore',
     'unimark',
+    'modules',
   ], both);
 
 
@@ -29,8 +30,7 @@ Package.on_use(function (api, where) {
 
 
   api.add_files([
-    'both/index.js',
-    'both/model.js',
+    'both/model.module.js',
   ], both);
 
   api.add_files([
@@ -41,24 +41,24 @@ Package.on_use(function (api, where) {
     'client/dynamo/dynamo_top.css',
 
 
-    'client/views/board.html',
-    'client/views/board.js',
-    'client/views/board_post.html',
-    'client/views/board_post.js',
-    'client/views/board_thread.html',
-    'client/views/board_thread.js',
-    'client/views/board_subboard.html',
+    'client/views/board.module.html',
+    'client/views/board.module.js',
+    'client/views/board_post.module.html',
+    'client/views/board_post.module.js',
+    'client/views/board_thread.module.html',
+    'client/views/board_thread.module.js',
+    'client/views/board_subboard.module.html',
 
-    'client/config.js',
-    'client/subscribe.js',
+    'client/config.module.js',
+    'client/subscribe.module.js',
   ], client);
 
   api.add_files([
-    'server/initData.js',
-    'server/allow.js',
-    'server/publish.js',
-    'server/observe.js',
-    'server/fake.js',
+    'server/initData.module.js',
+    'server/allow.module.js',
+    'server/publish.module.js',
+    'server/observe.module.js',
+    'server/fake.module.js',
     
   ], server);
 });

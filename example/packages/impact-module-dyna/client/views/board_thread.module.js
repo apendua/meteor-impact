@@ -1,11 +1,11 @@
-Template.dyna_board_thread.posts = function() {
+Template.board_thread.posts = function() {
   if(!this) return [];
   return Modules.Dyna.Posts.find({threadId: this._id});
 };
 
 
 
-Template.dyna_board_thread.events({
+Template.board_thread.events({
 
   'keyup .dyna_board_thread_response': function(e, t) {
     if(e.keyCode === 13) {

@@ -1,20 +1,20 @@
-<template name="dyna_board">
+<template name="board">
 
   <div class="dynamo_box">
     <div class="dynamo_column_template"></div>
     {{#each threads}}
       <div class="dynamo_item">
-        {{> dyna_board_thread}}
+        {{> board_thread}}
       </div>
     {{/each}}
   </div>
   
   <div class="dynamo_sidebar">
     <div class="dynamo_sidebarBreadcrumbs">
-      <a href="{{pathFor 'dyna_home'}}">FORUM</a>
+      <a href="{{pathFor 'home'}}">FORUM</a>
       <i class="fa fa-angle-right"></i>
       {{#each ancestors}}
-        <a href="{{pathFor 'dyna_board'}}">{{title}}</a> <i class="fa fa-angle-right"></i>
+        <a href="{{pathFor 'board'}}">{{title}}</a> <i class="fa fa-angle-right"></i>
       {{/each}}
     </div>
     {{#with board}}
@@ -30,7 +30,7 @@
 </template>
 
 
-<template name="dyna_trash">
+<template name="trash">
     <!--
     <div class="dynamo_sidebarCards">
       <div class="dynamo_sidebarCardsHeader">

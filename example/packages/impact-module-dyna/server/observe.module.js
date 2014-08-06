@@ -2,9 +2,9 @@
 /**/Meteor.startup(function(){/**/
 //////////////////////////////////
 
-useTimestampsFor(Modules.Dyna.Boards);
-useTimestampsFor(Modules.Dyna.Threads);
-useTimestampsFor(Modules.Dyna.Posts);
+useTimestampsFor(Dyna.Boards);
+useTimestampsFor(Dyna.Threads);
+useTimestampsFor(Dyna.Posts);
 
 //////////////////////////////////
 /*************************/});/**/

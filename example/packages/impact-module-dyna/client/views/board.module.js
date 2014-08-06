@@ -1,7 +1,7 @@
 
 
 
-Template.dyna_board.rendered = function() {
+Template.board.rendered = function() {
 
   this.data.ancestors = ['a', 'b'];
 
@@ -24,7 +24,7 @@ var getAncestors = function(board) {
   return ancestors;
 }
 
-Template.dyna_board.ancestors = function() {
+Template.board.ancestors = function() {
   return getAncestors(this.board);
 };
 
@@ -42,18 +42,18 @@ Template.dyna_board.ancestors = function() {
 //   return this.a;
 // };
 
-Template.dyna_board.threads = function() {
+Template.board.threads = function() {
   if(!this.board) return [];
   return Modules.Dyna.Threads.find({boardId: this.board._id});
 };
 
-Template.dyna_board.subboards = function() {
+Template.board.subboards = function() {
   if(!this.board) return [];
   return Modules.Dyna.Boards.find({parentId: this.board._id});
 };
 
 
-Template.dyna_board.events({
+Template.board.events({
 
 });
 

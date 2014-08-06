@@ -8,22 +8,22 @@
   TODO: notifications
 */
 
-Meteor.publish("dyna_boards", function() {
+Dyna.publish("boards", function() {
   // var user = Meteor.users.findOne(this.userId);
   // if(!!user) return [];
-  return Modules.Dyna.Boards.find({});
+  return Dyna.Boards.find({});
 });
 
-Meteor.publish("dyna_threads", function() {
+Dyna.publish("threads", function() {
   // var user = Meteor.users.findOne(this.userId);
   // if(!!user) return [];
-  return Modules.Dyna.Threads.find({});
+  return Dyna.Threads.find({});
 });
 
-Meteor.publish("dyna_posts", function() {
+Dyna.publish("posts", function() {
   // var user = Meteor.users.findOne(this.userId);
   // if(!!user) return [];
-  return Modules.Dyna.Posts.find({});
+  return Dyna.Posts.find({});
 });
 
 
