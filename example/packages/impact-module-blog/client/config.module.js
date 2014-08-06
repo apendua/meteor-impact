@@ -1,6 +1,5 @@
 /*
-  TODO:
-  Merge with subscription channels to take advantage of the waitOn param.
+  TODO: Merge with subscription channels to take advantage of the waitOn param.
 */
 
 _.defaults(settings, {
@@ -13,27 +12,19 @@ _.each([ 'home', 'list', 'dashboard', 'new', 'edit', 'article' ], function (rout
   settings.routes[routeName] = settings.routes[routeName] || {};
 });
 
-/*
-  Notice: to have it fully loadable (allow to load several instances of the same module
-  with different names), we need the following things:
-
-  - Field inside db marking to which module the document belongs,
-  - Pass module name to all templates as data, and
-  - Use the module name in an updated `path_for` helper.
-
-*/
-
-//Panels.Content.moduleBulbs.push({
-//  title: 'Blog',
-//  name: 'm:blog',
-//  url: '/content' + settings.path,
-//  icon: 'th-list',
-//});
+// integration with impact
+Blog.Impact.addToPanels("content", {
+  title: 'Blog',
+  name: 'm:blog',
+  url: '/content' + settings.path,
+  icon: 'th-list',
+});
 
 Blog.router(function () {
 
   /*
-    Todo: instead, create a separate file for managing home path and redirect it to a given path.
+    TODO: instead, create a separate file for managing home path and redirect it to a given path.
+          - do we rally need it? (apenuda)
   */
 
   if(settings.home) {

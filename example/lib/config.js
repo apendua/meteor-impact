@@ -27,13 +27,6 @@ MyBlog = Module('blog').load('blog', {
 });
 
 /*
-Modules.Blog.load({
-  name: 'blog',
-  path: '/blog',
-  articlePath: '/a',
-  home: true,
-});
-
 
 Modules.Dyna.load({
 
