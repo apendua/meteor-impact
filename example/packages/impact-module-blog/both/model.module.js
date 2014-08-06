@@ -10,7 +10,7 @@
   publishedAt   // moment
   updatedAt     // moment
 */
-Modules.Blog.Articles = new Meteor.Collection('blog_articles', {
+Blog.Articles = Blog.collection('articles', {
   
   // transform: function(article) {
   //   article.seo = Utils.clean(article.title);

@@ -24,6 +24,7 @@ Package.on_use(function (api, where) {
     'timestamp',
     'underscore',
     'unimark',
+    'modules',
   ], both);
 
 

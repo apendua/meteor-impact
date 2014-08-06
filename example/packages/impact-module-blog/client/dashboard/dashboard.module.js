@@ -1,7 +1,7 @@
 
 
-Template.blog_dashboard.articles = function() {
-  return Modules.Blog.Articles.find({
+Template.dashboard.articles = function() {
+  return Blog.Articles.find({
     // $or: [
       // {published: false},
       // {published: {$exists: false}}
@@ -11,7 +11,7 @@ Template.blog_dashboard.articles = function() {
   });
 };
 
-Template.blog_dashboard.ensureTitle = function() {
+Template.dashboard.ensureTitle = function() {
   if(this.title && this.title.length > 0) return this.title;
   return "<UNTITLED>";
 };

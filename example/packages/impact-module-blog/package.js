@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "Impact (alpha)"
+  summary: "Impact Blog"
 });
 
 Package.on_use(function (api, where) {
@@ -10,48 +10,49 @@ Package.on_use(function (api, where) {
 
   api.use([
     'accounts-base',
-    'crater-modals',
     'deps',
     'fake',
     'handlebars',
     'iron-router',
     'less',
     'moment',
-    'blaze',
     'templating',
     'timestamp',
     'underscore',
     'unimark',
+    'impact',
   ], both);
 
-  api.use('impact', both);
-
-
-  api.add_files([
-    'both/index.js',
-    'both/model.js',
-  ], both);
+  api.use('modules', both);
 
   api.add_files([
-    'client/dashboard/dashboard.html',
-    'client/dashboard/dashboard.js',
-    'client/dashboard/edit.html',
-    'client/dashboard/edit.js',
-
-    'client/views/article.html',
-    'client/views/article.js',
-    'client/views/articleToEdit.html',
-    'client/views/list.html',
-    'client/views/list.js',
-
-    'client/config.js',
-    'client/subscribe.js',
-  ], client);
+    'both/module.json',
+    'both/model.module.js',
+  ], both, { module: 'blog' });
 
   api.add_files([
-    'server/allow.js',
-    'server/fake.js',
-    'server/publish.js',
-  ], server);
+    'client/dashboard/dashboard.module.html',
+    'client/dashboard/dashboard.module.js',
+    'client/dashboard/edit.module.html',
+    'client/dashboard/edit.module.js',
+  ], both, { module: 'blog', layer: 'dashboard' });
+
+  api.add_files([
+    'client/views/article.module.html',
+    'client/views/article.module.js',
+    'client/views/articleToEdit.module.html',
+    'client/views/list.module.html',
+    'client/views/list.module.js',
+
+    'client/config.module.js',
+    'client/helpers.module.js',
+    'client/subscribe.module.js',
+  ], client, { module: 'blog' });
+
+  api.add_files([
+    'server/allow.module.js',
+    'server/fake.module.js',
+    'server/publish.module.js',
+  ], server, { module: 'blog' });
 
 });

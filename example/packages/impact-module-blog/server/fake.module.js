@@ -1,11 +1,8 @@
-//////////////////////////////////
-/**/Meteor.startup(function(){/**/
-//////////////////////////////////
 
-if(!process.env.FAKE) return;
+if (!process.env.FAKE) return;
 
 /* TODO: why is the count checked twice? Decide on the pattern and leave just one method. */
-if(Modules.Blog.Articles.findOne({})) return;
+if (Blog.Articles.findOne({})) return;
 
 console.log("FAKING MODULE: BLOG");
 
@@ -27,9 +24,9 @@ var randomSeo = function() {
 };
 
 
-if(Modules.Blog.Articles.find({}).count() < 40) {
+if (Blog.Articles.find({}).count() < 40) {
   _.times(20, function() {
-    Modules.Blog.Articles.insert({
+    Blog.Articles.insert({
       title: randomLine(),
       seo: randomSeo(),
       summary: randomLine() + ' ' + randomLine(),
@@ -42,7 +39,7 @@ if(Modules.Blog.Articles.find({}).count() < 40) {
     });
   });
   _.times(5, function() {
-    Modules.Blog.Articles.insert({
+    Blog.Articles.insert({
       title: randomLine(),
       seo: randomSeo(),
       summary: randomLine() + '. ' + randomLine() + '.',
@@ -54,11 +51,4 @@ if(Modules.Blog.Articles.find({}).count() < 40) {
       updatedAt: moment().valueOf(),
     });
   });
-  
 }
-
-
-//////////////////////////////////
-/*************************/});/**/
-//////////////////////////////////
-

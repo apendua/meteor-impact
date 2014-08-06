@@ -1,5 +1,5 @@
 
-Template.blog_article.rendered = function() {
+Template.article.rendered = function() {
 
   // $('.unimark-code').each(function(i, e) {
   //   var $e = $(e);

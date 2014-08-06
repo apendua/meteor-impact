@@ -5,11 +5,11 @@ var scroll = 0;
 
 
 
-Template.blog_edit.created = function() {
+Template.edit.created = function() {
   scroll = 0;
 };
 
-Template.blog_edit.rendered = function() {
+Template.edit.rendered = function() {
   Crater.go(this);
   Rainbow.color();
   // console.log("RENDERED", this.data.scroll);
@@ -77,7 +77,7 @@ var saveChanges = _.debounce(function(e, t) {
 
 
 
-Template.blog_edit.events({
+Template.edit.events({
 
   'click #blog_edit_publishButton': function(e, t) {
     // saveScroll();

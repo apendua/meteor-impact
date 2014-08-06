@@ -1,13 +1,13 @@
-<template name="blog_article">
+<template name="article">
 
   {{#with article}}
     <div>
+      <h1>{{title}}</h1>
       <small class="text-muted">{{date createdAt}}</small>
       <h1>{{#markdown}}{{title}}{{/markdown}}</h1>
       <p class="lead">{{#unimark}}{{{summary}}}{{/unimark}}</p>
       <hr/>
       <div>{{#unimark}}{{{content}}}{{/unimark}}</div>
-
     </div>
   {{/with}}
 

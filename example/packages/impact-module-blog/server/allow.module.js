@@ -1,11 +1,8 @@
-//////////////////////////////////
-/**/Meteor.startup(function(){/**/
-//////////////////////////////////
 
 /*
   TODO: user roles and privileges
 */
-Modules.Blog.Articles.allow({
+Blog.Articles.allow({
   insert: function(userId, items) {
     var user = Meteor.users.findOne(userId);
     return (!!user) && user.admin;
@@ -21,10 +18,3 @@ Modules.Blog.Articles.allow({
     return false;
   }
 });
-
-
-
-//////////////////////////////////
-/*************************/});/**/
-//////////////////////////////////
-

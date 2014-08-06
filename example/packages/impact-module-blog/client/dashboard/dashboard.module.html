@@ -1,4 +1,4 @@
-<template name="blog_dashboard">
+<template name="dashboard">
 
 
   <div class="adminHeader">
@@ -19,7 +19,7 @@
 
 
       {{#each articles}}
-        <a href="{{pathFor 'blog_edit'}}" class="adminTableRow">
+        <a href="{{pathFor 'edit'}}" class="adminTableRow">
           <span class="adminTableRowTop">
             <span class="">{{date createdAt}}</span>
           </span>

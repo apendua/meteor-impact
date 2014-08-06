@@ -40,3 +40,6 @@ Panels.Profile.bulbs = [
   Panels.Profile.theBulbs,
 ];
 
+Module.registerPlugin("impact", [ "$module" ], function ($module) {
+  console.log('impact plugin');
+});
